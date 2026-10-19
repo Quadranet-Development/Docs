@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="36741914-c89c-425b-a6fe-4f4685ea1ab4.png" alt="DBX Logo" width="300">
+  <img src="./Images/logo.png" alt="DBX Logo" width="300">
 </div>
 
 # DBX Web API Documentation
