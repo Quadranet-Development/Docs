@@ -2,7 +2,7 @@
   <img src="./Images/logo.png" alt="DBX Logo" width="300">
 </div>
 
-# DBX Web API Documentation
+# webBooking API Documentation
 
 ## Base URL
 ```
