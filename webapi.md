@@ -491,14 +491,14 @@ Content-Type: application/json
 ### Update Customer
 **Endpoint:** `POST /api/DBXWebApi/UpdateCustomer`
 
-**Description:** Update customer details. Subapp is resolved by booking_guid or customer_guid.
+**Description:** Update customer consent details.
 
 **Request:**
 ```json
 {
   "api_key": "00000000-0000-0000-0000-000000000000",
   "booking_guid": "00000000-0000-0000-0000-000000000000",
-  "customer_guid": "SPR0UTID_OR_CUSTOMER_GUID",
+  "customer_guid": "00000000-0000-0000-0000-000000000000",
   "consent": 1
 }
 ```
