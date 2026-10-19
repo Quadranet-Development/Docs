@@ -15,7 +15,7 @@
     { "key": "booking_guid", "value": "00000000-0000-0000-0000-000000000000", "type": "string" },
     { "key": "pending_booking_guid", "value": "00000000-0000-0000-0000-000000000000", "type": "string" },
     { "key": "promotion_guid", "value": "00000000-0000-0000-0000-000000000000", "type": "string" },
-    { "key": "customer_guid", "value": "SPR0UTID_OR_CUSTOMER_GUID", "type": "string" }
+    { "key": "customer_guid", "value": "00000000-0000-0000-0000-000000000000", "type": "string" }
   ],
   "item": [
     {
