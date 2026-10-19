@@ -48,7 +48,25 @@
       "request": {
         "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json", "type": "text" }],
         "body": { "mode": "raw", "raw": "{\n  \"api_key\": \"{{api_key}}\",\n  \"client_guid\": \"{{client_guid}}\",\n  \"location_guid\": \"{{location_guid}}\",\n  \"session_guid\": \"{{session_guid}}\",\n  \"covers\": 4,\n  \"booking_datetime\": \"2026-05-15T19:00:00\",\n  \"override_duration\": null,\n  \"booking_guid_list\": [],\n  \"table_ids\": [],\n  \"booking_source\": \"Website\",\n  \"promotion_guid\": null\n}", "options": { "raw": { "language": "json" } } },
-        "url": "{{base_url}}/api/DBXWebApi/MakeBooking"
+        "url": "{{base_url}}/api/DBXWebApi/MakeBooking",
+        "event": [
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "const response = pm.response.json();",
+          "",
+          "if (response.pending_booking_guid) {",
+          "    pm.collectionVariables.set('pending_booking_guid', response.pending_booking_guid);",
+          "    console.log('pending_booking_guid set to:', response.pending_booking_guid);",
+          "} else {",
+          "    console.warn('pending_booking_guid not found in response');",
+          "}"
+        ]
+      }
+    }
+  ],
       }
     },
     {
