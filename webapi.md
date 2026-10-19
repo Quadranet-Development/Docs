@@ -10,7 +10,7 @@
 ```
 
 ## Authentication
-All endpoints require an `api_key` (GUID) to be passed in the request body. The API key is validated against the PayAtTable repository.
+All endpoints require an `api_key` (GUID) to be passed in the request body.
 
 **Header:**
 ```
